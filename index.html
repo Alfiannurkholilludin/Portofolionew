@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome To My Portofolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- Icon -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
@@ -19,41 +16,77 @@
     <script src="https://kit.fontawesome.com/0047dc066f.js" crossorigin="anonymous"></script>
     <!-- tutup icon -->
 
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          /* background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+          font-size: 14px;
+          color: #000;
+        }
+  
+        .swiper-container {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 200px;
+        }
+  
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+          -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+        }
+      </style>
 </head>
 <body>
+    <!-- Preload -->
+    <div class="preload">
+        <h2>
+            <span>L</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+            <span>...</span>
+        </h2>
+    </div>
 
     <nav>
-        <div class="logo">
-            <div class="lightbar"></div>
-            <div class="toplayer"></div>
-            <h2>Alfian Nur Kholilludin</h2>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#project">Project</a>
-            </li>
-            <li>
-                <a href="#service">Service</a>
-            </li>
-            <li>
-                <a href="#tools">Tools & Skills</a>
-            </li>
-            <li>
-                <a href="#mywork">Contact</a>
-            </li>
-            <li>
-                <a href="document/CV - Alfian Nur Kholilludin - UI UX Designer - Bekasi.pdf">Cv</a>
-            </li>
+        <a href="#" class="logo">ANK</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Section hero -->
-    <section>
-        <div class="hero-sect">
-            <div class="hero-wrapper-content">
+    <section class="hero" id="home">
+        <img src="assets/img/bg2.jpg" alt="">
+        <div class="wrapper-content-hero">
+            <h1>Hello, I'm Alfian Nur Kholilludin</h1>
+            <h2>UI / UX Designer</h2>
+            <h3>Bring your brand<br>to life with our<br>help.</h3>
+            <div class="wrapper-button-icon">
+                <div class="container-button-hero">
+                    <a href="mailto:@alfiannurkholilludin@gmail.com"><span>Hire Me</span></a>
+                </div>
                 <div class="container-social">
                     <div class="icon-social">
                         <a href="https://dribbble.com/Alfiannurk"><i class="fab fa-dribbble"></i></a>
@@ -62,48 +95,19 @@
                         <a href="https://www.facebook.com/RichConnor20/"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
-                
-                <div class="container-image">
-                    <div class="image-fluid">
-                        <div class="image-path">
-                            <img src="path 10.png" alt="">
-                        </div>
-                        <div class="image-foto">
-                            <img src="me.png" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-text">
-                    <div class="text-wrapper">
-                        <div class="text-content-1">
-                            <h1>UI / UX DESIGNER</h1>
-                        </div>
-                        <div class="text-content-2">
-                            <h2>Bring your brand</h2>
-                            <h2>to life with our</h2>
-                            <h2>help.</h2>
-                        </div>
-                        <div class="container-button">
-                            <a href="mailto:alfiannurkholilludin@gmail.com"><span>Email Me</span></a>
-                            <a href="document/CV - Alfian Nur Kholilludin - UI UX Designer - Bekasi.pdf"><span>Download CV</span></a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="about-sect">
-            <div class="about-wrapper-title">
-                <h1>About</h1>
-            </div>
-
+    <section class="about" id="about">
+        <div class="about-wrapper-title">
+            <h1>About</h1>
+        </div>
+        <div class="content-wrapper">
             <div class="container-img-about">
                 <div class="cards">
                     <div class="imgBx">
-                        <img src="image1.jpg" alt="">
+                        <img src="assets/img/image1.jpg" alt="">
                     </div>
                     <div class="content-about">
                         <div class="details-about">
@@ -128,172 +132,177 @@
         </div>
     </section>
 
-    <section>
-        <div class="selected-project">
-            <div class="selectedproject-wrapper-title">
-                <h1>Selected Projects</h1>
-            </div>
-            <div class="all-img-baris-1">
-                <div class="image-induk-1">
-                    <img class="img1" src="swiggit.jpg" alt="ui1">
-                    <div class="img-overlay">
-                        <button class="btn-look">View Study Case</button>
-                    </div>
-                </div>
-                <div class="image-induk-2">
-                    <img class="img2" src="swiggit.jpg" alt="ui1">
-                    <div class="img-overlay-2">
-                        <button class="btn-look-2">View Study Case</button>
-                    </div>
+    <section class="Project" id="project">
+        <div class="project-wrapper-title">
+            <h1>Latest Project</h1>
+        </div>
+
+        <div class="all-img-baris-1">
+            <div class="image-induk-1">
+                <img class="img1" src="assets/img/swiggit.jpg" alt="ui1">
+                <div class="img-overlay">
+                    <button class="btn-look">View Study Case</button>
                 </div>
             </div>
+        </div>
     </section>
 
-    <section>
-        <div class="service">
-            <div class="service-wrapper-title">
-                <h1>Service</h1>
-            </div>
+    <section class="service" id="service">
+        <div class="service-wrapper-title">
+            <h1>Service</h1>
+        </div>
+        <div class="wrapper-content-service">
             <div class="container-service">
-                <div class="card-service">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <div class="content-service">
-                        <h2>01</h2>
-                        <h3>Web Design</h3>
-                        <p>UI creation for responsive website display</p>
-                        <!-- <a href="#">Read More</a> -->
-                    </div>
+                <div class="box">
+                    <h2 class="name">Web Design</h2>
+                    <a href="#" class="readmore">Read More</a>
+                    <div class="circle"></div>
+                    <img src="assets/img/pc.png" class="product">
                 </div>
-                <div class="card-service">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <div class="content-service">
-                        <h2>02</h2>
-                        <h3>App Design</h3>
-                        <p>UI creation for mobile display, android or IOS</p>
-                        <!-- <a href="#">Read More</a> -->
-                    </div>
+                <div class="box">
+                    <h2 class="name">App Design</h2>
+                    <a href="#" class="readmore">Read More</a>
+                    <div class="circle"></div>
+                    <img src="assets/img/mobile.png" class="product">
                 </div>
-                <div class="card-service">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <div class="content-service">
-                        <h2>03</h2>
-                        <h3>Advertising</h3>
-                        <p>manufacture for advertising needs such as banner ads, social media content and others</p>
-                        <!-- <a href="#">Read More</a> -->
-                    </div>
+                <div class="box">
+                    <h2 class="name">Advertising</h2>
+                    <a href="#" class="readmore">Read More</a>
+                    <div class="circle"></div>
+                    <img src="assets/img/pc.png" class="product">
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="why">
-            <div class="why-wrapper-title">
-                <h1>Why Hire Me?</h1>
-            </div>
-            
-            <div class="container-why">
-                <div class="card-why">
-                    <div class="content-why">
-                        <h2>Hard Working</h2>
-                        <p>I communicate what I struggle to make all crystal clear. I can communicate my ideas well</p>
-                        <!-- <a href="#">Read More</a> -->
-                    </div>
-                    <img src="imgcard1.png" alt="">
-                </div>
-                <div class="card-why">
-                    <div class="content-why">
-                        <h2>Creative</h2>
-                        <p>I always try to think creatively and have amazing ideas, and also like crazy ideas</p>
-                        <!-- <a href="#">Read More</a> -->
-                    </div>
-                    <img src="imgcard3.png" alt="">
-                </div>
-            </div>
-            <div class="container-why-2">
-                <div class="card-why-2">
-                    <div class="content-why-2">
-                        <h2>Problem Solving</h2>
-                        <p>I am very happy to provide solutions or solve existing problems as much as possible and to the best of my ability</p>
-                        <!-- <a href="#">Read More</a> -->
-                    </div>
-                    <img src="imgcard4.png" alt="">
-                </div>
-                <div class="card-why-2">
-                    <div class="content-why-2">
-                        <h2>Dicipline</h2>
-                        <p>I always do my work on time, and also do everything accurately</p>
-                        <!-- <a href="#">Read More</a> -->
-                    </div>
-                    <img src="imgcard5.png" alt="">
-                </div>
+    <section class="UI" id="ui">
+        <div class="UI-wrapper-title">
+            <h1>UI Eksploration</h1>
         </div>
-    </section>
-
-    <section>
-        <div class="tools">
-            <div class="tools-wrapper-title">
-                <h1>Tools & skills</h1>
-            </div>
-            <div class="tools-content-1">
-                <div class="tools-content-1-title">
-                    <img src="html5.png" alt="">
-                </div>
-            </div>
-            <div class="tools-content-2">
-                <div class="tools-content-2-title">
-                    <img src="css3.png" alt="">
-                </div>
-            </div>
-            <div class="tools-content-3">
-                <div class="tools-content-3-title">
-                    <img src="figma.png" alt="">
-                </div>
-            </div>
-            <div class="tools-content-4">
-                <div class="tools-content-4-title">
-                    <img src="adobexd.png" alt="">
-                </div>
-            </div>
-            <div class="tools-content-5">
-                <div class="tools-content-5-title">
-                    <img src="adobeps.png" alt="">
-                </div>
-            </div>
-            <div class="tools-content-6">
-                <div class="tools-content-6-title">
-                    <img src="studio.png" alt="">
+        <div class="wrapper-ui">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/img1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/img2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/img3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/img4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/img5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/img6.jpg" />
+                  </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer">
-            <div class="footer-wrapper-title">
-                <h1>Get in touch</h1>
-                <p>For business inquiry please send email to <span><a href="mailto:alfiannurkholilludin@gmail.com">alfiannurkholilludin@gmail.com</a></span></p>
+    <section class="tools">
+        <div class="tools-wrapper-title">
+            <h1>Tools & skills</h1>
+        </div>
+        <div class="wrapper-tools">
+            <div class="container-tools">
+                <div class="box">
+                    <h2 class="name-tools">Adobe XD</h2>
+                    <a href="#" class="readmore-tools">Read More</a>
+                    <div class="circle-tools"></div>
+                    <img src="assets/img/adobexd.png" class="product-tools">
+                </div>
+                <div class="box">
+                    <h2 class="name-tools">Adobe Photoshop</h2>
+                    <a href="#" class="readmore-tools">Read More</a>
+                    <div class="circle-tools"></div>
+                    <img src="assets/img/adobeps.png" class="product-tools">
+                </div>
+                <div class="box">
+                    <h2 class="name-tools">Figma</h2>
+                    <a href="#" class="readmore-tools">Read More</a>
+                    <div class="circle-tools"></div>
+                    <img src="assets/img/figma.png" class="product-tools">
+                </div>
+                <div class="box">
+                    <h2 class="name-tools">Html</h2>
+                    <a href="#" class="readmore-tools">Read More</a>
+                    <div class="circle-tools"></div>
+                    <img src="assets/img/html5.png" class="product-tools">
+                </div>
+                <div class="box">
+                    <h2 class="name-tools">CSS3</h2>
+                    <a href="#" class="readmore-tools">Read More</a>
+                    <div class="circle-tools"></div>
+                    <img src="assets/img/css3.png" class="product-tools">
+                </div>
+                <div class="box">
+                    <h2 class="name-tools">Invision Studio</h2>
+                    <a href="#" class="readmore-tools">Read More</a>
+                    <div class="circle-tools"></div>
+                    <img src="assets/img/studio.png" class="product-tools">
+                </div>
             </div>
-            <div class="container-social2">
-                <div class="icon-social2">
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-content">
+            <h2>ANK</h2>
+            <p>For business inquiry please send email to <span><a href="mailto:alfiannurkholilludin@gmail.com">alfiannurkholilludin@gmail.com</a></span></p>
+            <div class="container-social">
+                <div class="icon-social">
                     <a href="https://dribbble.com/Alfiannurk"><i class="fab fa-dribbble"></i></a>
                     <a href="https://www.instagram.com/alfian.design20/"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/alfian-nur-kholilludin-a6b462209/"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://www.facebook.com/RichConnor20/"><i class="fab fa-facebook-f"></i></a>
                 </div>
-            </div>  
+            </div>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+          loop: true,
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        });
+      </script>
+
+    <!-- Vanilla tilt JS -->
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
